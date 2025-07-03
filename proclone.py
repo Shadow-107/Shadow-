@@ -133,7 +133,7 @@ def intro():
     glitch_typing("\n" + msg + "\n", color=color)
 
     # Simulated system boot
-    glitch_typing(">> Booting ASIM Cracker OS...", CYAN)
+    glitch_typing(">> Booting Mehadi X Clone Tool...", CYAN)
     time.sleep(0.7)
     glitch_typing(">> Loading Kernel Modules...", CYAN)
     time.sleep(0.5)
